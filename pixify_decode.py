@@ -44,7 +44,8 @@ def decode(image):
                 square +=1
 
     char_int = red + 2*yellow + square
-    if char_int >0 and char_int <= 36: character = chr(char_int + 96)
+    if char_int >0 and char_int <= 26: character = chr(char_int + 96)
+    else: character = " "
 
     ###################################################
     return character
@@ -53,5 +54,5 @@ def decode(image):
 
 if __name__ == "__main__":
     for i in range(1,20):
-        img = cv2.imread(f'./test_cases/test_image_{i}.png')
+        img = cv2.imread(f'./test_cases/test_image_{14}.png')
         print(decode(img))
