@@ -52,7 +52,7 @@ def decode(image):
 
     
 
-if __name__ == "__main__":
-    for i in range(1,20):
-        img = cv2.imread(f'./test_cases/test_image_{14}.png')
-        print(decode(img))
+# if __name__ == "__main__":
+#     for i in range(1,20):
+#         img = cv2.imread(f'./test_cases/test_image_{14}.png')
+#         print(decode(img))
